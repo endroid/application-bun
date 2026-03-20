@@ -1,6 +1,7 @@
 {
   "bunVersion": "1.x",
+  "outputDirectory": "public",
   "rewrites": [
-    { "source": "/((?![^/]+\\.[^/]+$).*)", "destination": "/api" }
+    { "source": "/(.*)", "destination": "/api" }
   ]
 }
