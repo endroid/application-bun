@@ -1,14 +1,6 @@
 {
   "bunVersion": "1.x",
-  "headers": [
-    {
-      "source": "/favicon.ico",
-      "headers": [
-        { "key": "Content-Type", "value": "image/svg+xml" }
-      ]
-    }
-  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api" }
+    { "source": "/((?![^/]+\\.[^/]+$).*)", "destination": "/api" }
   ]
 }
