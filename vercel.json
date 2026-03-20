@@ -1,8 +1,5 @@
 {
-  "buildCommand": "bun install",
-  "outputDirectory": ".",
-  "routes": [
-    { "src": "/favicon.ico", "dest": "/favicon.svg" },
-    { "src": "/(.*)", "dest": "/index.ts" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
   ]
 }
