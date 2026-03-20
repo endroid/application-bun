@@ -19,7 +19,7 @@ app.get('/favicon.ico', (c) => {
 })
 
 app.get('/', (c) => {
-  return c.text('Hello Hono!')
+  return c.html('<!DOCTYPE html><html><head><link rel="icon" href="/favicon.ico" type="image/svg+xml"></head><body>Hello Hono!</body></html>')
 })
 
 export default app
